@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="img">
+    <file>audio/aux_active.png</file>
+    <file>audio/aux_inactive.png</file>
+    <file>audio/bt_active.png</file>
+    <file>audio/bt_inactive.png</file>
+    <file>audio/local_active.png</file>
+    <file>audio/local_inactive.png</file>
+    <file>audio/radio_active.png</file>
+    <file>audio/radio_inactive.png</file>
+    <file>audio_active.png</file>
+    <file>audio_inactive.png</file>
+    <file>camera_active.png</file>
+    <file>camera_inactive.png</file>
+    <file>home_active.png</file>
+    <file>home_inactive.png</file>
+    <file>nav_active.png</file>
+    <file>nav_inactive.png</file>
+    <file>temp_active.png</file>
+    <file>temp_inactive.png</file>
+  </qresource>
+</RCC>

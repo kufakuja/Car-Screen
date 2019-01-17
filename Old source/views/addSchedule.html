@@ -1,0 +1,44 @@
+{% extends './layout.html' %}
+
+{% block title %}
+Home Automation System
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/stylesheets/schedule-editor.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="/javascripts/schedule/schedule.js"></script>
+{% endblock %}
+
+{% block body %}
+
+<div class='item doubleWidth'>
+    <div class='item-name'>Add to Schedule</div>
+    <form action="/schedule/add/submit" method="post" id="schedule">
+    <div class='schedule-time-container'>
+        <input type='text' name="Name" placeholder="Schedule Name (optional)">
+        <input type='time' required name="Time" placeholder="Time of activation"/>
+        
+        <label><input type='checkbox' id='repeating' name="Repeating" value=true><br>Repeating</label><br>
+        <label class='days'><input type='checkbox' name="days[]" value="Monday"><br>Monday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Tuesday"><br>Tuesday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Wednesday"><br>Wednesday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Thursday"><br>Thursday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Friday"><br>Friday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Saturday"><br>Saturday</label>
+        <label class='days'><input type='checkbox' name="days[]" value="Sunday"><br>Sunday</label>
+    
+        <div id="selection-container">
+            Select actions to perform<br>
+            <div id="newRow" class="buttons"><a onclick="addSelectRow()">Add a new action</a></div>
+        </div>
+        
+        <input type='submit' value='Add to schedule'/>
+    </div>
+    </form>
+    <div></div>
+</div>
+
+{% endblock %}

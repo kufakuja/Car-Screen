@@ -1,0 +1,72 @@
+
+a {
+	color: #FFF;
+}
+
+#mapid {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0px;
+    left:0;
+    z-index: -1;
+}
+
+#geolocation, #directions, #controls, #injection{
+	width: 100%;
+	text-align: center;
+}
+
+#controls {
+	background-color: #EEE;
+	border: 2px #FFF solid;
+	border-left: 0;
+	border-right: 0;
+	padding: 5px 0;
+	color: #333;
+}
+
+#controls a {
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 0px 15px;
+}
+
+#panel {
+    position: absolute;
+	width: 904px;
+	height: 120px;
+	background-color: var(--main-color);
+    clip-path: polygon(0 0, 100% 0, 784px 100%, 120px 100%);
+    z-index: 2;
+}
+
+#search {
+    position: absolute;
+    left: 120px;
+}
+
+#reload {
+    position: absolute;
+    right: 120px;
+}
+
+#directions {
+    background-color: var(--back-color);
+    font-size: 80px;
+    text-align: center;
+    padding: 10px;
+    border: 10px solid var(--main-color);
+    color: var(--accent-color);
+    position: absolute;
+    left: 240px;
+    width: 424px;
+    height: 120px;
+}
+
+#panel span.distance {
+	font-size: 16px;
+	display: block;
+	font-weight: 700;
+}

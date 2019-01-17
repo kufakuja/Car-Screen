@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background: #5685ab;
+}</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1024</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab {
+margin:0px;padding:px;border:0px;
+}
+QTabBar:tab:left, QTabBar:tab:right  {
+	margin-bottom:-16px;
+}
+QTabBar:tab:bottom, QTabBar:tab:top {
+	margin-right:-16px;
+}
+
+QTabBar::tab:top QTabBar::tab:bottom {
+
+}
+
+QTabWidget::pane {
+	background: #C2C7CB;
+}
+
+QTabWidget::tab-bar {
+margin:0px;padding:0px;border:0px;alignment:center;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::East</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="nav_tab">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/nav_inactive.png</normaloff>
+       <normalon>:/img/nav_active.png</normalon>
+       <selectedon>:/imgs/img2.png</selectedon>:/img/nav_inactive.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="audio_tab">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/audio_inactive.png</normaloff>
+       <normalon>:/img/audio_active.png</normalon>:/img/audio_inactive.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QSlider" name="verticalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>40</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove {
+	width: 20px; border: 10px solid #2d2d44;
+}
+
+QSlider::add-page {
+   width: 20px; border: 10px solid #2d2d44;
+	background: white;
+	border-top: none;
+}</string>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::NoTicks</enum>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>681</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <widget class="QWidget" name="radio_tab_2">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/img/audio/radio_inactive.png</normaloff>
+         <normalon>:/img/audio/radio_active.png</normalon>:/img/audio/radio_inactive.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="bt_tab_2">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/img/audio/bt_inactive.png</normaloff>
+         <normalon>:/img/audio/bt_active.png</normalon>:/img/audio/bt_inactive.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="aux_tab_2">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/img/audio/aux_inactive.png</normaloff>
+         <normalon>:/img/audio/aux_active.png</normalon>:/img/audio/aux_inactive.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="local_tab_2">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/img/audio/local_inactive.png</normaloff>
+         <normalon>:/img/audio/local_active.png</normalon>:/img/audio/local_inactive.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+     </widget>
+     <zorder>tabWidget_3</zorder>
+     <zorder>verticalSlider_2</zorder>
+    </widget>
+    <widget class="QWidget" name="home_tab">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/home_inactive.png</normaloff>
+       <normalon>:/img/home_active.png</normalon>:/img/home_inactive.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="temp_tab">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/temp_inactive.png</normaloff>
+       <normalon>:/img/temp_active.png</normalon>:/img/temp_inactive.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="camera_tab">
+     <attribute name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/img/camera_inactive.png</normaloff>
+       <normalon>:/img/camera_active.png</normalon>:/img/camera_inactive.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Pictures/resource.qrc"/>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

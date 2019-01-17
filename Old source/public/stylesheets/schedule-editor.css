@@ -1,0 +1,56 @@
+.schedule-time-container {
+    width: 100%;
+    text-align: center;
+}
+
+.schedule-time-container input:not([type='checkbox'])  {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+label {
+    text-align: center;
+    display:inline-block;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+#selection-container {
+    margin: auto;
+    padding: 1em;
+    width: 90%;
+    border: 5px solid darkgray;
+}
+
+input[type='time'] {
+    font: 1.1em 'Droid Sans Mono', Monaco, monospace;
+}
+
+input[type='number'] {
+    display: inline-block !important;
+}
+
+input[type='submit'] {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: darkslategrey;
+    margin: 0.5em;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+input[type='submit']:hover {
+    background-color: black;
+}
+
+select,option,input {
+    
+    font: 1.2em;
+    padding: 0.6em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin: 0.5em;
+}

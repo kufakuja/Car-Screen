@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href='//fonts.googleapis.com/css?family=Droid Sans Mono' rel='stylesheet'>
+    {% block styles %}{% endblock %}
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>
+            {% block title %}{% endblock %}
+        </h1>
+    </header>
+    <div class="content">
+        {% block body %}{% endblock %}
+    </div>
+    <footer>
+        Web application developed for FYP Comp Sci and Maths by Jacob Watson N0502940
+    </footer>
+</body>
+</html>

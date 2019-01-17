@@ -1,0 +1,104 @@
+:root {
+    --accent-color: #ffffff;
+    --back-color: #5685ab;
+    --main-color: #426784;
+    --dark-color: #223544;
+}
+
+@font-face {
+  font-family: 'bahnschrift';
+  src:  url('bahnschrift.ttf') format('truetype'),
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0; padding: 0; border: 0;
+    background: #e6e9e9;
+    font-family: "bahnschrift", sans-serif;
+}
+
+body {
+    position: fixed;
+    margin: 0; padding: 0; border: 0;
+    width: 1024px;
+    height: 600px;
+    font-family: "bahnschrift", sans-serif;
+}
+
+.icon {
+    fill: var(--accent-color);
+}
+
+.icon:hover{
+    fill: var(--accent-color);
+}
+
+#navbar {
+    background-color: var(--back-color);
+    float: right;
+    width: 120px;
+    height: 600px;
+}
+
+
+#main {
+    position: fixed;
+    background-color: var(--back-color);
+    width: 904px;
+    height: 600px;
+    padding: none; margin: none; border: none;
+}
+
+button {
+    font-size: 20px;
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin: 0; padding: 0; border: 0;
+    color: var(--accent-color);
+    background-color: var(--main-color);
+}
+
+button.selected {
+    background-color: var(--back-color);
+}
+
+button:hover {
+    background-color: black;
+}
+
+.navbutton {
+    background-color: var(--dark-color);
+    display: block;
+}
+
+#kb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.key {
+    display: inline-block;
+    position: static;
+    width: 70px;
+    height: 70px;
+    background-color: var(--dark-color);
+    margin: 5px;
+    padding: 10px;
+    color: var(--accent-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.key.big {
+    width: 150px;
+}
